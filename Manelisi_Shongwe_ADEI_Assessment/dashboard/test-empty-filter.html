@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Empty filter test</title>
+</head>
+<body>
+  <h1>Dashboard empty-filter test</h1>
+  <p id="result" role="status">Running test…</p>
+  <iframe id="dashboard" title="Dashboard under test" src="index.html" hidden></iframe>
+
+  <script>
+    const result = document.querySelector("#result");
+    const frame = document.querySelector("#dashboard");
+    const deadline = Date.now() + 5000;
+
+    const timer = setInterval(() => {
+      const page = frame.contentDocument;
+      const trend = page?.querySelector("#trend");
+
+      // Wait for the real dashboard to load and render its initial trend.
+      if (!trend || trend.children.length === 0) {
+        if (Date.now() >= deadline) {
+          clearInterval(timer);
+          result.textContent = "FAIL: The initial trend did not load.";
+        }
+        return;
+      }
+
+      clearInterval(timer);
+      const filter = page.querySelector("#channel");
+      const browser = frame.contentWindow;
+
+      filter.add(new browser.Option("Test channel", "__no_tickets__"));
+      filter.value = "__no_tickets__";
+      filter.dispatchEvent(new browser.Event("change"));
+
+      const checks = [
+        [page.querySelector("#status").textContent ===
+          "No tickets match this filter.", "empty message"],
+        [trend.children.length === 0, "previous trend cleared"],
+        [page.querySelector("#metrics").textContent.includes("SLA: N/A (0 eligible)"),
+          "SLA marked unavailable"],
+      ];
+
+      const failures = checks.filter(([passed]) => !passed);
+      result.textContent = failures.length === 0
+        ? "PASS: Empty message shown, previous trend cleared, and SLA unavailable."
+        : `FAIL: ${failures.map(([, label]) => label).join(", ")}`;
+    }, 50);
+  </script>
+</body>
+</html>

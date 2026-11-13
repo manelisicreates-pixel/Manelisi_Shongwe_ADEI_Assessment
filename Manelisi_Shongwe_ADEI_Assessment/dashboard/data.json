@@ -1,0 +1,290 @@
+{
+  "overall": {
+    "volume": 141,
+    "resolution_count": 94,
+    "median_minutes": 298.0,
+    "sla_eligible": 93,
+    "sla_breaches": 46,
+    "sla_rate": 0.4946236559139785
+  },
+  "weeks": [
+    {
+      "week_start": "2026-10-05",
+      "volume": 35,
+      "resolution_count": 27,
+      "median_minutes": 213.0,
+      "sla_eligible": 27,
+      "sla_breaches": 13,
+      "sla_rate": 0.48148148148148145
+    },
+    {
+      "week_start": "2026-10-12",
+      "volume": 35,
+      "resolution_count": 20,
+      "median_minutes": 287.0,
+      "sla_eligible": 20,
+      "sla_breaches": 8,
+      "sla_rate": 0.4
+    },
+    {
+      "week_start": "2026-10-19",
+      "volume": 35,
+      "resolution_count": 22,
+      "median_minutes": 255.0,
+      "sla_eligible": 21,
+      "sla_breaches": 7,
+      "sla_rate": 0.3333333333333333
+    },
+    {
+      "week_start": "2026-10-26",
+      "volume": 36,
+      "resolution_count": 25,
+      "median_minutes": 426.0,
+      "sla_eligible": 25,
+      "sla_breaches": 18,
+      "sla_rate": 0.72
+    }
+  ],
+  "channels": {
+    "Email": {
+      "overall": {
+        "volume": 47,
+        "resolution_count": 34,
+        "median_minutes": 333.0,
+        "sla_eligible": 33,
+        "sla_breaches": 18,
+        "sla_rate": 0.5454545454545454
+      },
+      "weeks": [
+        {
+          "week_start": "2026-10-05",
+          "volume": 10,
+          "resolution_count": 9,
+          "median_minutes": 265.0,
+          "sla_eligible": 9,
+          "sla_breaches": 5,
+          "sla_rate": 0.5555555555555556
+        },
+        {
+          "week_start": "2026-10-12",
+          "volume": 13,
+          "resolution_count": 8,
+          "median_minutes": 251.5,
+          "sla_eligible": 8,
+          "sla_breaches": 4,
+          "sla_rate": 0.5
+        },
+        {
+          "week_start": "2026-10-19",
+          "volume": 14,
+          "resolution_count": 9,
+          "median_minutes": 438.0,
+          "sla_eligible": 8,
+          "sla_breaches": 1,
+          "sla_rate": 0.125
+        },
+        {
+          "week_start": "2026-10-26",
+          "volume": 10,
+          "resolution_count": 8,
+          "median_minutes": 770.5,
+          "sla_eligible": 8,
+          "sla_breaches": 8,
+          "sla_rate": 1.0
+        }
+      ]
+    },
+    "SMS": {
+      "overall": {
+        "volume": 1,
+        "resolution_count": 1,
+        "median_minutes": 3305.0,
+        "sla_eligible": 1,
+        "sla_breaches": 1,
+        "sla_rate": 1.0
+      },
+      "weeks": [
+        {
+          "week_start": "2026-10-05",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        },
+        {
+          "week_start": "2026-10-12",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        },
+        {
+          "week_start": "2026-10-19",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        },
+        {
+          "week_start": "2026-10-26",
+          "volume": 1,
+          "resolution_count": 1,
+          "median_minutes": 3305.0,
+          "sla_eligible": 1,
+          "sla_breaches": 1,
+          "sla_rate": 1.0
+        }
+      ]
+    },
+    "Unknown": {
+      "overall": {
+        "volume": 1,
+        "resolution_count": 1,
+        "median_minutes": 516.0,
+        "sla_eligible": 1,
+        "sla_breaches": 1,
+        "sla_rate": 1.0
+      },
+      "weeks": [
+        {
+          "week_start": "2026-10-05",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        },
+        {
+          "week_start": "2026-10-12",
+          "volume": 1,
+          "resolution_count": 1,
+          "median_minutes": 516.0,
+          "sla_eligible": 1,
+          "sla_breaches": 1,
+          "sla_rate": 1.0
+        },
+        {
+          "week_start": "2026-10-19",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        },
+        {
+          "week_start": "2026-10-26",
+          "volume": 0,
+          "resolution_count": 0,
+          "median_minutes": null,
+          "sla_eligible": 0,
+          "sla_breaches": 0,
+          "sla_rate": null
+        }
+      ]
+    },
+    "Web": {
+      "overall": {
+        "volume": 52,
+        "resolution_count": 34,
+        "median_minutes": 274.5,
+        "sla_eligible": 34,
+        "sla_breaches": 16,
+        "sla_rate": 0.47058823529411764
+      },
+      "weeks": [
+        {
+          "week_start": "2026-10-05",
+          "volume": 16,
+          "resolution_count": 12,
+          "median_minutes": 243.5,
+          "sla_eligible": 12,
+          "sla_breaches": 5,
+          "sla_rate": 0.4166666666666667
+        },
+        {
+          "week_start": "2026-10-12",
+          "volume": 13,
+          "resolution_count": 7,
+          "median_minutes": 252.0,
+          "sla_eligible": 7,
+          "sla_breaches": 2,
+          "sla_rate": 0.2857142857142857
+        },
+        {
+          "week_start": "2026-10-19",
+          "volume": 9,
+          "resolution_count": 7,
+          "median_minutes": 197.0,
+          "sla_eligible": 7,
+          "sla_breaches": 4,
+          "sla_rate": 0.5714285714285714
+        },
+        {
+          "week_start": "2026-10-26",
+          "volume": 14,
+          "resolution_count": 8,
+          "median_minutes": 431.5,
+          "sla_eligible": 8,
+          "sla_breaches": 5,
+          "sla_rate": 0.625
+        }
+      ]
+    },
+    "WhatsApp": {
+      "overall": {
+        "volume": 40,
+        "resolution_count": 24,
+        "median_minutes": 284.0,
+        "sla_eligible": 24,
+        "sla_breaches": 10,
+        "sla_rate": 0.4166666666666667
+      },
+      "weeks": [
+        {
+          "week_start": "2026-10-05",
+          "volume": 9,
+          "resolution_count": 6,
+          "median_minutes": 164.5,
+          "sla_eligible": 6,
+          "sla_breaches": 3,
+          "sla_rate": 0.5
+        },
+        {
+          "week_start": "2026-10-12",
+          "volume": 8,
+          "resolution_count": 4,
+          "median_minutes": 419.0,
+          "sla_eligible": 4,
+          "sla_breaches": 1,
+          "sla_rate": 0.25
+        },
+        {
+          "week_start": "2026-10-19",
+          "volume": 12,
+          "resolution_count": 6,
+          "median_minutes": 264.0,
+          "sla_eligible": 6,
+          "sla_breaches": 2,
+          "sla_rate": 0.3333333333333333
+        },
+        {
+          "week_start": "2026-10-26",
+          "volume": 11,
+          "resolution_count": 8,
+          "median_minutes": 317.0,
+          "sla_eligible": 8,
+          "sla_breaches": 4,
+          "sla_rate": 0.5
+        }
+      ]
+    }
+  }
+}

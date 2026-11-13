@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADEI Support Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Support Ticket Dashboard</h1>
+    <p>Tickets opened 5 October–1 November 2026 (SAST)</p>
+
+    <label for="channel">Channel</label>
+    <select id="channel">
+      <option value="">All channels</option>
+    </select>
+
+    <p id="status" role="status">Loading dashboard data…</p>
+
+    <section id="metrics" aria-label="Ticket metrics"></section>
+
+    <section aria-labelledby="trend-heading">
+      <h2 id="trend-heading">Weekly SLA breach rate</h2>
+      <div id="trend"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

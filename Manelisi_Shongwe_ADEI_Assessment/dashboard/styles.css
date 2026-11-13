@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: #f3f6fa;
+  color: #17263a;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+select {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  font: inherit;
+}
+
+#metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+#metrics p {
+  margin: 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.trend-row {
+  margin-bottom: 1rem;
+}
+
+.trend-track {
+  height: 0.75rem;
+  margin-top: 0.25rem;
+  background: #dce5f0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.trend-bar {
+  height: 100%;
+  background: #2458a6;
+}
+
+@media (max-width: 600px) {
+  #metrics {
+    grid-template-columns: 1fr;
+  }
+}
